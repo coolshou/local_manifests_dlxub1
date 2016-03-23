@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="github"
+				fetch="https://github.com/" />
+    <remote name="coolshou" fetch="https://github.com/" />
+			 
+<!-- AOSP
+
+<project path="device/htc/common" name="device/htc/common" remote="aosp" revision="master"/>
+-->
+<!-- CyanogenMod 
+<project path="device/htc/msm8960-common" name="CyanogenMod/android_device_htc_msm8960-common" remote="github" revision="cm-11.0" />
+-->
+<!-- TWRP recovery https://github.com/TeamWin/Team-Win-Recovery-Project-->
+<!-- <project path="external/TWRPrecovery" name="TeamWin/Team-Win-Recovery-Project" remote="github" revision="twrp2.7" />-->
+
+<!--
+<project path="kernel/htc/msm8960" name="CyanogenMod/android_kernel_htc_msm8960" remote="github" revision="cm-11.0" />
+-->
+<!-- github coolshou -->
+<!-- cm kernel path
+<project path="kernel/htc/k2u" name="coolshou/htc_k2u_kernel-3.4.10" remote="coolshou" revision="master" />
+-->
+<!-- aosp kernel path-->
+<project path="device/htc/dlxub1-kernel/" name="coolshou/htc_dlxub1_kernel-3.4.10" remote="coolshou" revision="master" />
+<!--https://github.com/boa19861105/android_LP5.0.2_kernel_htc_dlxub1-->
+<project path="device/htc/dlxub1-kernel-boa/" name="boa19861105/android_LP5.0.2_kernel_htc_dlxub1" remote="github" revision="master" />
+<!-- kernel module-->
+<!-- TODO exfat non-fuse base-->
+
+<!-- dlxb1u device-->
+<!--https://github.com/Butterfly-CM/android_device_htc_dlxub1
+<project path="device/htc/dlxub1-cm/" name="Butterfly-CM/android_device_htc_dlxub1" remote="github" revision="master" />
+-->
+<project path="device/htc/dlxub1/" name="coolshou/android_device_htc_dlxub1" remote="coolshou" revision="master" />
+<project path="device/htc/msm8960-common/" name="CyanogenMod/android_device_htc_msm8960-common" remote="github" revision="cm-12.1" />
+
+
+<project path="vendor/htc/dlxub1/" name="coolshou/android_vendor_htc_dlxub1" remote="coolshou" revision="master" />
+
+<!--recovery-->
+<!--dlx ? move to dlxub1
+https://github.com/TeamWin/android_device_htc_dlx.git
+cm-12.1
+-->
+<!-- Apps -->
+
+<!-- Lime HD-->
+<!-- CM file manager -->
+
+<!-- <project path="external/koush/ion" name="CyanogenMod/ion" />
+<project path="external/koush/AndroidAsync" name="CyanogenMod/AndroidAsync" /> 
+conflect to build/core/base_rules.mk:152: *** system/extras/su: MODULE.TARGET.EXECUTABLES.su already defined by external/koush/Superuser.  Stop.
+<project path="external/koush/Superuser" name="CyanogenMod/Superuser" remote="github"/>
+<project path="external/koush/Widgets" name="CyanogenMod/Widgets" remote="github"/>
+-->
+
+
+<!-- remove -->
+<!-- AOSP ASUS device -->
+<remove-project name="device/asus/deb" />
+<remove-project name="device/asus/flo" />
+<remove-project name="device/asus/flo-kernel" />
+<remove-project name="device/asus/grouper" />
+<remove-project name="device/asus/tilapia" />
+<remove-project name="device/asus/fugu" />
+<remove-project name="device/asus/fugu-kernel" />
+<!-- htc -->
+<remove-project name="device/htc/flounder" />
+<remove-project name="device/htc/flounder-kernel" />
+<!-- AOSP lge device -->
+<remove-project name="device/lge/hammerhead" />
+<remove-project name="device/lge/hammerhead-kernel" />
+<remove-project name="device/lge/mako" />
+<remove-project name="device/lge/mako-kernel" />
+
+<!-- AOSP samsung device -->
+<remove-project name="device/samsung/manta" />
+
+<!-- AOSP moto device -->
+<remove-project name="device/moto/shamu" />
+<remove-project name="device/moto/shamu-kernel" />
+
+<!-- AOSP prebuilts darwin-->
+<remove-project name="platform/prebuilts/clang/darwin-x86/3.1" />
+<remove-project name="platform/prebuilts/clang/darwin-x86/3.2" />
+<remove-project name="platform/prebuilts/clang/darwin-x86/arm/3.3" />
+<remove-project name="platform/prebuilts/clang/darwin-x86/mips/3.3" />
+<remove-project name="platform/prebuilts/clang/darwin-x86/x86/3.3" />
+<remove-project name="platform/prebuilts/gcc/darwin-x86/host/headers" />
+<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
+<!-- not need package -->
+<remove-project name="platform/packages/inputmethods/LatinIME" />
+<!-- <remove-project name="platform/packages/inputmethods/PinyinIME" /> -->
+<!-- mips -->
+<remove-project name="device/generic/mips" />
+<remove-project name="device/generic/mini-emulator-mips" />
+
+<!-- AOSP device
+<remove-project name="device/generic/mips" />
+<remove-project name="platform/hardware/qcom/msm8x74" />
+<remove-project name="platform/hardware/samsung_slsi/exynos5" />
+<remove-project name="platform/hardware/ti/omap3" />
+<remove-project name="platform/hardware/ti/omap4xxx" />
+<remove-project name="platform/packages/wallpapers/Galaxy4" />
+<remove-project name="platform/prebuilts/clang/linux-x86/3.1" />
+<remove-project name="platform/docs/source.android.com" />
+-->			
+
+</manifest>

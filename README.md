@@ -7,6 +7,15 @@ Instructions: (TODO)
 2. repo sync
 2. cd .repo
 3. git clone https://github.com/coolshou/local_manifests_dlxub1.git local_manifests
-4. repo sync
+4. cd ..
+5. repo sync
+6. cd kernel
+7. git submodule init
+8. git submodule update
+9. cd ..
+
+
+Now start normal build procress 
+
 
 
